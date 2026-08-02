@@ -1,24 +1,21 @@
 {
-  "name": "noor-and-co",
+  "name": "luxora-store",
   "version": "1.0.0",
   "private": true,
-  "description": "Noor & Co. - Premium AI-Powered E-Commerce Platform",
-  "engines": {
-    "node": ">=20"
-  },
+  "description": "Luxora - Premium AI-Powered E-Commerce Platform",
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "prisma studio",
-    "postinstall": "prisma generate || true"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
-    "next": "15.3.3",
+    "next": "15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "@prisma/client": "^6.5.0",
@@ -69,6 +66,6 @@
     "@tailwindcss/postcss": "^4.0.14",
     "postcss": "^8.5.3",
     "eslint": "^9.22.0",
-    "eslint-config-next": "15.3.3"
+    "eslint-config-next": "15.2.4"
   }
 }

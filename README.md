@@ -1,4 +1,4 @@
-# Noor & Co. — Premium AI-Powered E-Commerce Platform
+# Luxora — Premium AI-Powered E-Commerce Platform
 
 A luxurious, modern, mobile-first e-commerce platform built with Next.js 15, designed to feel more premium than Daraz and as smooth as Shopify.
 
@@ -57,7 +57,7 @@ A luxurious, modern, mobile-first e-commerce platform built with Next.js 15, des
 
 ```bash
 # 1. Clone / enter project
-cd noor-and-co
+cd luxora-store
 
 # 2. Install dependencies
 npm install
@@ -89,7 +89,7 @@ docker compose up -d --build
 ## Project Structure
 
 ```
-noor-and-co/
+luxora-store/
 ├── prisma/           # Schema & migrations
 ├── public/           # Static assets
 ├── src/

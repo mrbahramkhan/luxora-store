@@ -5,15 +5,15 @@ services:
     image: postgres:16-alpine
     restart: unless-stopped
     environment:
-      POSTGRES_USER: luxora
-      POSTGRES_PASSWORD: luxora_secret
-      POSTGRES_DB: luxora
+      POSTGRES_USER: noor
+      POSTGRES_PASSWORD: noor_secret
+      POSTGRES_DB: noor
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U luxora"]
+      test: ["CMD-SHELL", "pg_isready -U noor"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -24,11 +24,11 @@ services:
     ports:
       - "3000:3000"
     environment:
-      DATABASE_URL: postgresql://luxora:luxora_secret@db:5432/luxora?schema=public
+      DATABASE_URL: postgresql://noor:noor_secret@db:5432/noor?schema=public
       NEXTAUTH_URL: http://localhost:3000
       NEXTAUTH_SECRET: change-me-in-production-use-openssl-rand
       NEXT_PUBLIC_APP_URL: http://localhost:3000
-      NEXT_PUBLIC_APP_NAME: Luxora
+      NEXT_PUBLIC_APP_NAME: Noor & Co.
       NEXT_PUBLIC_WHATSAPP_NUMBER: "923001234567"
     depends_on:
       db:
